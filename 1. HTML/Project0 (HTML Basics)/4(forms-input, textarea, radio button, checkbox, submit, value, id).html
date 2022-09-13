@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Webpage</title>
+</head>
+<body>
+    <form action="" method=""><!--form takes forms and fills them, uses text inputs, checkbox inouts, button inputs-->
+        <label for="nickname">Enter your nickname here.</label>
+        <input type="text" name="your nickname" id="nickname" placeholder="this is placeholder"> <!--placeholder goes away on typing-->
+        <!-- id of input should match for of label to connect label and input. the name is used by backend -->
+        <br>
+        <label for="nickname">Enter your nickname here.</label>
+        <input type="text" name="your nickname" id="nickname" value="this is value"><!--value doesn't go away on typing-->
+        <br>
+        <button type="submit">done</button><!--the button here is supposed to collect the data.-->
+        <br>
+        <input type="submit"><!--this button does exclusively what the earlier one does, also input type can also be made to search, meaning input type="search". There is also a specific inout for dates, passwords, emails, etc.-->
+        <br>
+        <textarea name="" id="" cols="30" rows="10" required></textarea>
+        <!-- this required is essential to be filled for submission. -->
+        <br>
+        <P>please the radio button</P>
+        <input type="radio" name="1" id="" value="1">Radio button 1
+        <input type="radio" name="1" id="" value="2">Radio button 2
+        <input type="radio" name="1" id="" value="3">Radio button 3
+        <!--the name should be same so that both radio boxes aren't selected, if the name, that is the question is different, the user can select both the options.-->
+        <br>
+        <P>please the checkbox</P>
+        <input type="checkbox" name="1" id="" value="1" checked>button 1
+        <input type="checkbox" name="1" id="" value="2">button 2
+        <input type="checkbox" name="1" id="" value="3">button 3
+    </form>
+
+    <form action="/submit" method="get">
+        <!-- the action is the location of the data to be stored.
+        the method specifies what is to be done when the button is pressed
+        further reading required. -->
+        <input type="email" name="username" required>
+        <input type="submit">
+        <!-- also check out the url in the browser after submitting some email using live server -->
+    </form>
+</body>
+</html>
